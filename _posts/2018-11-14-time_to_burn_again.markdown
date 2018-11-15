@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Time to Burn Again"
-date:       2018-11-14 23:37:54 +0000
+title:      "Time to Burn Once Again"
+date:       2018-11-14 18:37:55 -0500
 permalink:  time_to_burn_again
 ---
 
