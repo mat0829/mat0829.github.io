@@ -5,7 +5,7 @@ date:       2018-11-14 15:45:27 -0500
 permalink:  my_origin_story
 ---
 
-# (Warning to any that read this blog: Contains graphic material that some may not feel confortable with such as alcholism and addiction, PTSD, and suicide amongst others. Proceed only if you accept this.)
+# (Under Construction)
 
 # My name is David Mathew Anderson but anyone that knows me calls me Mat. I am a 38 year old male from Las Vegas, Nevada who is now living in Eugene, Oregon after a very hard path to get here that my wife and I conquered. My story is different than the other ones that you will read about because of a major defining thing that happened to me which will be the focal point of this blog for the duration of my time in Flatiron and beyond. 
 # I will get into that later but first let me answer the question about why did I choose to pursue a career in Full Stack Web Development. I chose this path because I have been prepped for a job in computers my whole life by my Hero, my father. Ever since I was a small child he had always encouraged me to use computers and had even had me playing games like Alf and Manhole when I was just a small child and the screens were still black and green. Completing this would be the cultivation of one of my father's dreams for me. This has become much more important to me since his passing in 2015 but we'll get into that in a moment. I am already quite savy on computers and can do everything from building computers, hardware, computer teching to solve problems for clients, to messing around with HTML and making basic webpages when I was younger and later creating about 50+ music sites on Myspace for things I liked like movie soundtracks like Labyrinth, William's Shakespear's Romeo and Juliet Soundtrack, etc. 
