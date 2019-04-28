@@ -6,8 +6,6 @@ permalink:  nightmares_do_come_true
 ---
 
   <p> What can I say, it was a nightmare at first but I learned SO much! I remember when I first started I felt like a child being thrown into the water to learn to swim. I knew that I had read and done the labs, etc, but it was quite different to have an entirely blank slate to make. I am so so much more knowledgeable now and it, like when I reformat my blogs from this horrible giant font once I know more, is due to half things breaking and half desires to be artistic. </p>
-<br>
-<br>
    Like this blog and it's extremely ugly look so far, as I know nothing really, I felt the same when I started my project despite so much knowledge and progress in the school. I had read about Git and Github and done the walkthroughs previously but it was all fresh again and I learned that part from 0. Now I know all about creating m own Repo, cloning and forking, git add ., git commit -m "Comments", and git push. I have used them soooooooo many times during my projects. 
 <br>
 <br>
