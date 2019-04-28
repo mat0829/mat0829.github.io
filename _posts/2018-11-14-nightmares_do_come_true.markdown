@@ -62,8 +62,8 @@ permalink:  nightmares_do_come_true
 <br>
 <br>
 ```
-var example = "hello!";
-alert(example);
+var example = "hello!"
+alert(example)
 ```
 <br>
 <br>
