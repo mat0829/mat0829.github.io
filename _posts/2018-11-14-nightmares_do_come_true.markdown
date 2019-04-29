@@ -55,13 +55,13 @@ end
 
 <p>I did end up finding something which ended up being very kewl on most of the pages called Facts of Doom. To anyone who has ever watched Invader Zim and knows about the show's obsession with Doom, this was a sweet find. I found that it worked alot though it returned too many or too few values as each li there contained a different fact. Again the fun layout of these pages created issues I had to work through. The Zim, main character, page started later than the others at line 5 where other characters required that I start at 1 or return nothing. Other characters had none. I also found some characters had like 30 facts which was just too many. I finally landed on only pulling facts 0-8. I got some unwanted data on Zim's page I am still trying to get rid of but the rest worked really well. The problem standing with the Zim return is figuring out how to pull the unwanted text from the beginning of this return as it returns part of a table of stuff, without ruining the rest. I spent hours trying to get it to work to no avail. The other issue was my program returned an empty string if it had no facts. Later I found in my cli how to check the character.facts_of_doom and if they were == "" equal to the empty string, I returned a string explaining that to the user. Score!</p>
 ```
-if character.name == "Minimoose"
-            character_page_traits[:facts_of_doom] ||= table.css(".mw-content-text ul li")[0..5].text.strip.gsub(/[\"\n\t]/, '') 
-              #if table.css(".mw-content-text ul li")[0..5]
-          elsif character.name == "Zim"
-            character_page_traits[:facts_of_doom] ||= table.css(".mw-content-text ul li")[5..10].text.strip.gsub(/[\"\n\t]/, '') #if table.css(".mw-content-text ul li")[5..10]
-          else
-            character_page_traits[:facts_of_doom] ||= table.css(".mw-content-text ul li")[0..8].text.strip.gsub(/[\"\n\t]/, '').delete("[1]").delete("[2]").delete("[3]")   #if table.css(".mw-content-text ul li")[0..8]
+if character.facts_of_doom == ""
+         puts CLIColorize.colorize("Sorry #{@human.name}, this character has no Facts of Doom.", :red).strip
+         sleep(5)
+       else
+         puts CLIColorize.colorize("Facts of Doom:", :red).strip
+         puts CLIColorize.colorize("   #{character.facts_of_doom}", :cyan).strip
+         sleep(8)
 end
 ```
 <p>I had many many issues which broke my program I had to work through but I found my way by using if else statements and then finding the right thing to check or, in the case of the input for character's number from the character selection list, modifying it, input.to_i, to an integer and then checking that the input was between the range of number the character list contained.</p> 
