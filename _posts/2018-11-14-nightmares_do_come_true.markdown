@@ -47,8 +47,11 @@ permalink:  nightmares_do_come_true
 `var example = "hello!";`
 	 
 ```
-var example = "hello!";
-alert(example);
+if character.name == "GIR" || character.name == "Professor Membrane" || character.name == "Ms. Bitters" || character.name == "Recap Kid" || character.name == "Minimoose" || character.name == "Roboparents"
+            character_page_traits[:homeworld] ||= table.css("td")[1].text.strip.gsub(/[\n]/, '')
+          else
+            character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '')
+end
 ```
 
 
