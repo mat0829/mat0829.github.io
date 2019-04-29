@@ -54,6 +54,11 @@ character.name == "Recap Kid" || character.name == "Minimoose" || character.name
           else;
             character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '');
 end;
+
+```
+```
+var example = "hello!";
+alert(example);
 ```
 <br><br>
 <p>I found the answer to these problems and fixed my gem to get rid of the ugly table return and it is freaking immaculate now! I am so stoked! Thanks to the answer I found I was also able to add in all of the other attributes I wanted to for my gem. It now contains pretty much anything of value of the original page!  I am over the moon and proud! The answer was in using if else statements in the 2nd scraper and then using the character.name to select that character and then set it to the specific area to be scraped. So happy!</p>
