@@ -41,9 +41,10 @@ permalink:  nightmares_do_come_true
    <p>I finally decided to stop using those values as I just couldn't figure out how to let my scraper know that for certain characters it had to scrape differently. I didn't even know where to start and I investigated ALOT. I finally woke up a day later and it occurred to me to just grab the whole table. I played with the scraper again and got it to work. To this day, it's not the prettiest, but I got all that sweet information and, even better, it returns it all for every character's different table, even if they have more of less stuff. I cleaned it up by adding it some .gsub, and .delete, but I could never quite figure out how to make it pretty. I finally went with .gsubbing out /n for - as it still separated the text in a way that made it readable while still obviously having a key and value feel to it.</p> 
 
    <p>After that I decided to go again and, again with Beth's help in looking over my stuff and making suggestions to improve my code, I decided to try to grab some other great blocks of information like a paragraph long description of each character, their appearance, and their personality. Needless to say, later I discovered a similar issue with different starting points for the same values on different pages and even the actual class names being different. So frustrating. I am still sorting through the issues with these to be able to use the information for my, already built, scraper code for these as I think they would be great if I could get them working. I know theoretically how but I would have to be able to get the scraper to recognize a specific character and scrape differently based on the name. I even know what I would change if I ever could find a way. I know.... I KNOW!</p> 
-
+<br><br>
 	 *(Updated) 
 	 `var example = "hello!";`
+	 <br><br>
 
 ```
 
@@ -54,7 +55,7 @@ if character.name == "GIR" || character.name == "Professor Membrane" || characte
 end
 
 ```
-
+<br><br>
 <p>I found the answer to these problems and fixed my gem to get rid of the ugly table return and it is freaking immaculate now! I am so stoked! Thanks to the answer I found I was also able to add in all of the other attributes I wanted to for my gem. It now contains pretty much anything of value of the original page!  I am over the moon and proud! The answer was in using if else statements in the 2nd scraper and then using the character.name to select that character and then set it to the specific area to be scraped. So happy!</p>
 
    <p>I did end up finding something which ended up being very kewl on most of the pages called Facts of Doom. To anyone who has ever watched Invader Zim and knows about the show's obsession with Doom, this was a sweet find. I found that it worked alot though it returned too many or too few values as each li there contained a different fact. Again the fun layout of these pages created issues I had to work through. The Zim, main character, page started later than the others at line 5 where other characters required that I start at 1 or return nothing. Other characters had none. I also found some characters had like 30 facts which was just too many. I finally landed on only pulling facts 0-8. I got some unwanted data on Zim's page I am still trying to get rid of but the rest worked really well. The problem standing with the Zim return is figuring out how to pull the unwanted text from the beginning of this return as it returns part of a table of stuff, without ruining the rest. I spent hours trying to get it to work to no avail. The other issue was my program returned an empty string if it had no facts. Later I found in my cli how to check the character.facts_of_doom and if they were == "" equal to the empty string, I returned a string explaining that to the user. Score!</p>
