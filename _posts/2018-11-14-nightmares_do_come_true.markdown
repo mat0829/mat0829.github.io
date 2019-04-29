@@ -5,7 +5,6 @@ date:       2018-11-14 16:25:27 -0500
 permalink:  nightmares_do_come_true
 ---
 
-	
 What can I say, it was a nightmare at first but I learned SO much! I remember when I first started I felt like a child being thrown into the water to learn to swim. I knew that I had read and done the labs, etc, but it was quite different to have an entirely blank slate to make. I am so so much more knowledgeable now and it, like when I reformat my blogs from this horrible giant font once I know more, is due to half things breaking and half desires to be artistic. 
 <br>
 <br>
