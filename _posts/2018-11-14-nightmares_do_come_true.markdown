@@ -45,22 +45,12 @@ permalink:  nightmares_do_come_true
 	 *(Updated) 
 	 <br><br>
 	 `var example = "hello!";`
-	 <br><br>
-```
-
-if character.name == "GIR" || character.name == "Professor Membrane" || character.name == "Ms. Bitters" ||;
-character.name == "Recap Kid" || character.name == "Minimoose" || character.name == "Roboparents";
-            character_page_traits[:homeworld] ||= table.css("td")[1].text.strip.gsub(/[\n]/, '');
-          else;
-            character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '');
-end;
-
-```
+	 
 ```
 var example = "hello!";
 alert(example);
 ```
-<br><br>
+
 <p>I found the answer to these problems and fixed my gem to get rid of the ugly table return and it is freaking immaculate now! I am so stoked! Thanks to the answer I found I was also able to add in all of the other attributes I wanted to for my gem. It now contains pretty much anything of value of the original page!  I am over the moon and proud! The answer was in using if else statements in the 2nd scraper and then using the character.name to select that character and then set it to the specific area to be scraped. So happy!</p>
 
    <p>I did end up finding something which ended up being very kewl on most of the pages called Facts of Doom. To anyone who has ever watched Invader Zim and knows about the show's obsession with Doom, this was a sweet find. I found that it worked alot though it returned too many or too few values as each li there contained a different fact. Again the fun layout of these pages created issues I had to work through. The Zim, main character, page started later than the others at line 5 where other characters required that I start at 1 or return nothing. Other characters had none. I also found some characters had like 30 facts which was just too many. I finally landed on only pulling facts 0-8. I got some unwanted data on Zim's page I am still trying to get rid of but the rest worked really well. The problem standing with the Zim return is figuring out how to pull the unwanted text from the beginning of this return as it returns part of a table of stuff, without ruining the rest. I spent hours trying to get it to work to no avail. The other issue was my program returned an empty string if it had no facts. Later I found in my cli how to check the character.facts_of_doom and if they were == "" equal to the empty string, I returned a string explaining that to the user. Score!</p>
