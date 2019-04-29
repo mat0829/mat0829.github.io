@@ -46,15 +46,11 @@ Upon this I grabbed 2 more pieces of information from this page, the debut of th
 <br>
 <br>
 Through much trial and error and some very important help from Beth, we got it working. What I was doing wrong was putting those attributes in a hash and then pushing that into an array. The issue, amongst others, was that on the Character Class where it was attempting to give the attributes back it was expecting a hash. She showed me this error and helped me refactor the scraper code and it was rocking!
-<br>
-<br>
 ```
 def self.scrape_profile_page(character)
       html = open(character.profile_url)
       doc = Nokogiri::HTML(html)
 ```
-<br>
-<br>
 After that I finally had what I needed. Again, I spent way too much time making my scraper work for the 2nd page. I probably should've just chosen a different page but oh well,lol. The individual character pages presented an equivalent amount of problems I am still sorting out. Once the 2nd scraper was able to pass in a `character`, rather than a `profile_url` as the Student Scraper had, then things started to fall into place. I had tested my code on Repl.it but had only got it working with an actual individual character's page as the url rather that the character attribute from the 1st scraper. I was forced to remedy this to get my program to work at all.
 <br>
 <br>
@@ -68,8 +64,6 @@ After that I decided to go again and, again with Beth's help in looking over my 
 <br>
 <br>
 **(Updated)** I found the answer to these problems and fixed my gem to get rid of the ugly table return and it is freaking immaculate now! I am so stoked! Thanks to the answer I found I was also able to add in all of the other attributes I wanted to for my gem. It now contains pretty much anything of value of the original page!  I am over the moon and proud! The answer was in using if else statements in the 2nd scraper and then using the `character.name` to select that `character` and then set it to the specific area to be scraped. So happy!
-<br>
-<br>
 ```
 if character.name == "GIR" || character.name == "Professor Membrane" || character.name == "Ms. Bitters" || character.name == "Recap Kid" || character.name == "Minimoose" || character.name == "Roboparents"
             character_page_traits[:homeworld] ||= table.css("td")[1].text.strip.gsub(/[\n]/, '')
@@ -77,11 +71,7 @@ if character.name == "GIR" || character.name == "Professor Membrane" || characte
             character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '')
 end
 ```
-<br>
-<br>
 I did end up finding something which ended up being very kewl on most of the pages called Facts of Doom. To anyone who has ever watched Invader Zim and knows about the show's obsession with Doom, this was a sweet find. I found that it worked alot though it returned too many or too few values as each li there contained a different fact. Again the fun layout of these pages created issues I had to work through. The Zim, main character, page started later than the others at line 5 where other characters required that I start at 1 or return nothing. Other characters had none. I also found some characters had like 30 facts which was just too many. I finally landed on only pulling facts 0-8. I got some unwanted data on Zim's page I am still trying to get rid of but the rest worked really well. The problem standing with the Zim return is figuring out how to pull the unwanted text from the beginning of this return as it returns part of a table of stuff, without ruining the rest. I spent hours trying to get it to work to no avail. The other issue was my program returned an empty string if it had no facts. Later I found in my cli how to check the `character.facts_of_doom` and if they were `== ""` equal to the empty string, I returned a string explaining that to the user. Score!
-<br>
-<br>
 ```
 if character.facts_of_doom == ""
          puts CLIColorize.colorize("Sorry #{@human.name}, this character has no Facts of Doom.", :red).strip
@@ -92,11 +82,7 @@ if character.facts_of_doom == ""
          sleep(8)
 end
 ```
-<br>
-<br>
 I had many many issues which broke my program I had to work through but I found my way by using if else statements and then finding the right thing to check or, in the case of the input for character's number from the character selection list, modifying it, `input.to_i`, to an integer and then checking that the input was between the range of number the character list contained.
-<br>
-<br>
 ```
 input = gets.strip.to_i
     
@@ -107,6 +93,4 @@ input = gets.strip.to_i
 else 
 ...
 ```
-<br>
-<br>
 After I had been quite veteraned and gained more confidence I even made a new class called Human so that I could take in the user's name and interact with them throughout the gem. I did use a class variable at first before Beth helping me realize that this was not right. She endlessly helped me to look to things that needed investigating and helped me improve my gem so much because of it. I am so proud of it now and people seem to be pretty entertained by it. If you end up using it I would Love to hear what you though readers. I had a blast making it and after much modified code and almost giving up on this gem, it is at a stage where I am going to upload it to RubyGems.org after my assessment and some last minute advice to make sure I am covering my bases. I had many many errors and I spent so much time googling how to make things work and then solving them that I truly Love it now! It has been a blast making this and I appreciate so much all the patience of Beth and my wonderful wife Lirit, my beta tester, lol, and I hope that it ends up being something that bring happiness to Invader Zim fans and makes some new ones. It was so much fun to make and I am already thinking of other gems to make for the future. On my free time of course this time,lol. First up will be a Jim Henson's The Storyteller gem. It must exist! Have a great one all.
