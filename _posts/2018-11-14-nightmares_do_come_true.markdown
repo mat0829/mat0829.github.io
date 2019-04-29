@@ -43,17 +43,17 @@ permalink:  nightmares_do_come_true
    <p>After that I decided to go again and, again with Beth's help in looking over my stuff and making suggestions to improve my code, I decided to try to grab some other great blocks of information like a paragraph long description of each character, their appearance, and their personality. Needless to say, later I discovered a similar issue with different starting points for the same values on different pages and even the actual class names being different. So frustrating. I am still sorting through the issues with these to be able to use the information for my, already built, scraper code for these as I think they would be great if I could get them working. I know theoretically how but I would have to be able to get the scraper to recognize a specific character and scrape differently based on the name. I even know what I would change if I ever could find a way. I know.... I KNOW!</p> 
 <br><br>
 	 *(Updated) 
+	 <br><br>
 	 `var example = "hello!";`
 	 <br><br>
-
 ```
 
-if character.name == "GIR" || character.name == "Professor Membrane" || character.name == "Ms. Bitters" || character.name == "Recap Kid" || character.name == "Minimoose" || character.name == "Roboparents"
-            character_page_traits[:homeworld] ||= table.css("td")[1].text.strip.gsub(/[\n]/, '')
-          else
-            character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '')
-end
-
+if character.name == "GIR" || character.name == "Professor Membrane" || character.name == "Ms. Bitters" ||;
+character.name == "Recap Kid" || character.name == "Minimoose" || character.name == "Roboparents";
+            character_page_traits[:homeworld] ||= table.css("td")[1].text.strip.gsub(/[\n]/, '');
+          else;
+            character_page_traits[:homeworld] ||= table.css("td")[3].text.strip.gsub(/[\n]/, '');
+end;
 ```
 <br><br>
 <p>I found the answer to these problems and fixed my gem to get rid of the ugly table return and it is freaking immaculate now! I am so stoked! Thanks to the answer I found I was also able to add in all of the other attributes I wanted to for my gem. It now contains pretty much anything of value of the original page!  I am over the moon and proud! The answer was in using if else statements in the 2nd scraper and then using the character.name to select that character and then set it to the specific area to be scraped. So happy!</p>
