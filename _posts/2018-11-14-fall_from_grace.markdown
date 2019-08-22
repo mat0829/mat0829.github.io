@@ -22,25 +22,25 @@ we solved the problem with the following code: `@memories = current_user.memorie
 ![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
 <br>
 <br>
-[Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
+![Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
 <br>
 <br>
-[Add a New Memory Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject3.jpg)
+![Add a New Memory Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject3.jpg)
 <br>
 <br>
-[Memory Show Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject4.jpg)
+![Memory Show Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject4.jpg)
 <br>
 <br>
-[A Specific Emotion's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject5.jpg)
+![A Specific Emotion's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject5.jpg)
 <br>
 <br>
-[A Specific Person's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject6.jpg)
+![A Specific Person's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject6.jpg)
 <br>
 <br>
-[Emotions Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject7.jpg)
+![Emotions Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject7.jpg)
 <br>
 <br>
-[People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject8.jpg)
+![People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject8.jpg)
 <br>
 <br>
      So, in conclusion, a User can make a Memory and then can search either by their Memories in general, by an Emotion, or by a Person and get all Memories,Emotions, and People tied to any of the individual Memories. That way you can simply look up all the Memories tied to "Dad" or "Joy" or simply browse your Memories as a whole. I also decided to add in the 10 base Emotions so that there is some out of the gates. I thought of solo memories too and added in one for the Players(People) side too with Me, Myself, and I so that there is a Person tied to all Memories. I think, in the end, I might end up adding a has many through relationship with the User class too for the many benefits and after seeing the end product of my Application and what I wish it could still do. 
