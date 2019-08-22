@@ -20,6 +20,7 @@ we solved the problem with the following code: `@memories = current_user.memorie
 <br>
 <br>
 ![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
+**Home Page**
 <br>
 <br>
 ![Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
