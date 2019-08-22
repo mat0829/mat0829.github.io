@@ -19,7 +19,7 @@ we solved the problem with the following code: `@memories = current_user.memorie
      Now for some screenshots from my Sinatra Project, My Pensieve:
 <br>
 <br>
-**Home Page**
+<center>**Home Page**</center>
 ![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
 <br>
 <br>
