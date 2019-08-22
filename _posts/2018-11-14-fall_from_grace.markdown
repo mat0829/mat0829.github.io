@@ -44,7 +44,7 @@ we solved the problem with the following code: `@memories = current_user.memorie
 <br>
 <br>
 ###                                                   People Index Page
-![People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject8.jpg)
+![People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject9.jpg)
 <br>
 <br>
 ###                                                   A Person's Memories Page
