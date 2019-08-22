@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "My Pensieve (Sinatra Project) "
+title:      "My Pensieve"
 date:       2018-11-14 16:55:32 -0500
 permalink:  fall_from_grace
 ---
