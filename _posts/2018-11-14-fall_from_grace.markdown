@@ -19,35 +19,35 @@ we solved the problem with the following code: `@memories = current_user.memorie
      Now for some screenshots from my Sinatra Project, My Pensieve:
 <br>
 <br>
-<center>**Home Page**</center>
+###                                                   Home Page
 ![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
 <br>
 <br>
-**Memories Index Page**
+###                                                   Memories Index Page
 ![Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
 <br>
 <br>
-**Add a New Memory Page**
+###                                                   Add a New Memory Page
 ![Add a New Memory Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject3.jpg)
 <br>
 <br>
-**Memory Show Page**
+###                                                   Memory Show Page
 ![Memory Show Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject4.jpg)
 <br>
 <br>
-**Emotions Index Page**
+###                                                   Emotions Index Page
 ![Emotions Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject7.jpg)
 <br>
 <br>
-**A Specific Emotion's Memories Page**
+###                                                   An Emotion's Memories Page
 ![A Specific Emotion's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject5.jpg)
 <br>
 <br>
-**People Index Page**
+###                                                   People Index Page
 ![People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject8.jpg)
 <br>
 <br>
-**A Specific Person's Memories Page**
+###                                                   A Person's Memories Page
 ![A Specific Person's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject6.jpg)
 <br>
 <br>
