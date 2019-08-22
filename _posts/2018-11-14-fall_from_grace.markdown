@@ -22,7 +22,7 @@ we solved the problem with the following code: `@memories = current_user.memorie
 ![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
 <br>
 <br>
-[Memories Index Page](https://oi27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
+[Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
 <br>
 <br>
 [Add a New Memory Page](https://oi27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject3.jpg)
