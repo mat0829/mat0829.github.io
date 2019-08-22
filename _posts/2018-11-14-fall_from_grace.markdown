@@ -19,7 +19,7 @@ we solved the problem with the following code: `@memories = current_user.memorie
      Now for some screenshots from my Sinatra Project, My Pensieve:
 <br>
 <br>
-[Home Page](https://oi27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg)
+[URL=http://s27.photobucket.com/user/LVSpiritSeeker/media/SinatraProject1.jpg.html][IMG]https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject1.jpg[/IMG][/URL]
 <br>
 <br>
 [Memories Index Page](https://oi27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
