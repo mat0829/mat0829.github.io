@@ -25,22 +25,24 @@ permalink:  time_to_burn_again
   Now that things were in order with that I continued to play with my application in Rails vs Sinatra. The difference in the code was the most extreme thing. It is SO dry in Rails. From the partials that I created for everything from the new and edit forms and being able to just put `<%= render 'form' %>` in each view to using the same idea to do everything from using partials for code for buttons linking to common pages like home. The code is so clean. So easy to read. 
 <br>
 <br>
-I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this: `<%= form_for @memory do |f| %>
-  
-  <%= render 'errors'%>
+I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this: 
 
-  <h3><%= f.label :title %> <%= f.text_field :title %></h3><br>
-
-  <%= f.text_area :content, cols: "38", rows: "10", placeholder: "Enter Content here: "%><br><br>
-
-  <% if !@emotions.blank? %>
-
-    <h3>Choose an Emotion(s):</h3><br>
-    <li><%= f.collection_check_boxes :emotion_ids, @emotions.all.uniq, :id, :name_capitalized %></li><br>
-
-    <%= f.fields_for :emotions, @memory.emotions.build do |emotions_fields| %>
-      <h4><%= emotions_fields.label :name, "Create a New Emotion:" %> <%= emotions_fields.text_field :name, style: 'text-transform: capitalize;' %></h4>
-    <% end %><br>`
+> <%= form_for @memory do |f| %>
+>   
+>   <%= render 'errors'%>
+> 
+>   <h3><%= f.label :title %> <%= f.text_field :title %></h3><br>
+> 
+>   <%= f.text_area :content, cols: "38", rows: "10", placeholder: "Enter Content here: "%><br><br>
+> 
+>   <% if !@emotions.blank? %>
+> 
+>     <h3>Choose an Emotion(s):</h3><br>
+>     <li><%= f.collection_check_boxes :emotion_ids, @emotions.all.uniq, :id, :name_capitalized %></li><br>
+> 
+>     <%= f.fields_for :emotions, @memory.emotions.build do |emotions_fields| %>
+>       <h4><%= emotions_fields.label :name, "Create a New Emotion:" %> <%= emotions_fields.text_field :name, style: 'text-transform: capitalize;' %></h4>
+>     <% end %><br>
 <br>
 <br>
 
