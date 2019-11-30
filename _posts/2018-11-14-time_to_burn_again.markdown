@@ -48,9 +48,13 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
   Another thing that I got to see become something much better was the introduction of collection_check_boxes. So much easier to use and once I understood how they work they are more obvious to me in what they carry. I Love this about Rails. I find it to be so much more obvious when you actually go to make and especially read the code later. Truly a thing of beauty. 
 <br>
 <br>
-  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this `<body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
-    background-size: cover;background-attachment: fixed;">
-<!–– Background from wallpapersafari.com ––>`, now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
+  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this
+<br>
+> 	 <body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
+>     background-size: cover;background-attachment: fixed;">
+> <!–– Background from wallpapersafari.com ––>
+<br>
+ now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
 <br>
 <br>
   The last thing I want to discuss is Omniauth. First I had both the ability to use Facebook to login and the ability to create a login and use that. I used a trick in the create action of sessions controller where it would `auth = request.env["omniauth.auth"]` and then check if auth then it would go to a seperate session action called create_facebook_user with stuff specific for omniauth, or else it would make a user through the traditional way. I also added a field for password in the omniauth one that tied to a randomly generated, url safe, password as to fulfill the need for has_secure_password to have a password to work with. This made it so I could still use it for both and have it work correctly ensuring al passwords are secure.
