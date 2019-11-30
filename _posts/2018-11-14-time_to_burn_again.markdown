@@ -10,8 +10,7 @@ permalink:  time_to_burn_again
   For my Rails Project I took my Sinatra project My Pensieve, and took it to another level. I thought because I had a idea to work from that it would be easy. Not the case at all but I learned so much! First, it looks basically like a clone of the Sinatra project but on the backend it is a entirely new beast and in all the best ways. It is leaner, meaner, and so much more intelligent and clean. It is DRY in a way I didn't even realized was possible. 
 <br>
 <br>
-  My project is called My Pensieve and it allows a user to signup and then create memoriestied to their user with a title, content, and also emotions and players(people/pets). You are then able to see an index page of your memories, and emotions page, and a people/pets page. Once on these pages they connect to their other components such as on the memories page you can see all your memories, sorted by title alphbetized 
-
+  My project is called My Pensieve and it allows a user to signup and then create memoriestied to their user with a title, content, and also emotions and players(people/pets). You are then able to see an index page of your memories, and emotions page, and a people/pets page. Once on these pages they connect to their other components such as on the memories page you can see all your memories, sorted by title alphabetized, and then when any memory title is clicked on it takes you to that memories show page. The same holds true for the emotions and players indexes. Click on a emotion or person/pet and it will show you all the memories tied to them, thus giving you the ability to easily find all the memories that are "happy" or with "Dad" in them.
 <br>
 <br>
    From the start I Loved Rails and all it's abilities. I heard the term "Rails Magic" but I didn't really understand until I started learning about it and especially applying what I had learned to my Rails Project. It was beautiful to work with and I am so excited to have finally come into the meat and potatoes of this course in learning to be a Ruby on Rails developer. The magic is in how much Rails will do for you intuitively. It is INSANE! It is so smart!
@@ -40,9 +39,9 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
 <br>
   I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this
 <br>
-> 	 <body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
->     background-size: cover;background-attachment: fixed;">
-> <!–– Background from wallpapersafari.com ––>
+ 	 <body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
+     background-size: cover;background-attachment: fixed;">
+   <!–– Background from wallpapersafari.com ––>
 <br>
  now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
 <br>
