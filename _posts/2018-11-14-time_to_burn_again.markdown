@@ -10,6 +10,10 @@ permalink:  time_to_burn_again
   For my Rails Project I took my Sinatra project My Pensieve, and took it to another level. I thought because I had a idea to work from that it would be easy. Not the case at all but I learned so much! First, it looks basically like a clone of the Sinatra project but on the backend it is a entirely new beast and in all the best ways. It is leaner, meaner, and so much more intelligent and clean. It is DRY in a way I didn't even realized was possible. 
 <br>
 <br>
+  My project is called My Pensieve and it allows a user to signup and then create memoriestied to their user with a title, content, and also emotions and players(people/pets). You are then able to see an index page of your memories, and emotions page, and a people/pets page. Once on these pages they connect to their other components such as on the memories page you can see all your memories, sorted by title alphbetized 
+
+<br>
+<br>
    From the start I Loved Rails and all it's abilities. I heard the term "Rails Magic" but I didn't really understand until I started learning about it and especially applying what I had learned to my Rails Project. It was beautiful to work with and I am so excited to have finally come into the meat and potatoes of this course in learning to be a Ruby on Rails developer. The magic is in how much Rails will do for you intuitively. It is INSANE! It is so smart!
 <br>
 <br>
@@ -26,23 +30,9 @@ permalink:  time_to_burn_again
 <br>
 <br>
 I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this: 
-
-> <%= form_for @memory do |f| %>
->   
->   <%= render 'errors'%>
-> 
->   <h3><%= f.label :title %> <%= f.text_field :title %></h3><br>
-> 
->   <%= f.text_area :content, cols: "38", rows: "10", placeholder: "Enter Content here: "%><br><br>
-> 
->   <% if !@emotions.blank? %>
-> 
->     <h3>Choose an Emotion(s):</h3><br>
->     <li><%= f.collection_check_boxes :emotion_ids, @emotions.all.uniq, :id, :name_capitalized %></li><br>
-> 
->     <%= f.fields_for :emotions, @memory.emotions.build do |emotions_fields| %>
->       <h4><%= emotions_fields.label :name, "Create a New Emotion:" %> <%= emotions_fields.text_field :name, style: 'text-transform: capitalize;' %></h4>
->     <% end %><br>
+<br>
+###                                                   Example
+![Example of form](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject.jpg)
 <br>
 <br>
   Another thing that I got to see become something much better was the introduction of collection_check_boxes. So much easier to use and once I understood how they work they are more obvious to me in what they carry. I Love this about Rails. I find it to be so much more obvious when you actually go to make and especially read the code later. Truly a thing of beauty. 
