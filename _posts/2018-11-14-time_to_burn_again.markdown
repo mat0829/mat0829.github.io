@@ -48,4 +48,24 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
   The last thing I want to discuss is Omniauth. First I had both the ability to use Facebook to login and the ability to create a login and use that. I used a trick in the create action of sessions controller where it would `auth = request.env["omniauth.auth"]` and then check if auth then it would go to a seperate session action called create_facebook_user with stuff specific for omniauth, or else it would make a user through the traditional way. I also added a field for password in the omniauth one that tied to a randomly generated, url safe, password as to fulfill the need for has_secure_password to have a password to work with. This made it so I could still use it for both and have it work correctly ensuring al passwords are secure.
 <br>
 <br>
-  Making this project was a blast and as I have stated in every blog about projects they teach me so much by having so many unexpected things arise and having to figure them out that they are my favorite part everytime. They reinforce the knowledge I had from the section but they also teach me things I never thought to ask or notice until they were needed. Rails in comparision to Sinatra is like having powertools vs regular tools to build a house. Sure, you can get it done either way, but not only are the powertools going to be easier but they also build a more solid house. I hope you enjoy my Rails Project My Pensieve as much as I did making it. 
+  Making this project was a blast and as I have stated in every blog about projects they teach me so much by having so many unexpected things arise and having to figure them out that they are my favorite part everytime. They reinforce the knowledge I had from the section but they also teach me things I never thought to ask or notice until they were needed. Rails in comparision to Sinatra is like having powertools vs regular tools to build a house. Sure, you can get it done either way, but not only are the powertools going to be easier but they also build a more solid house. I hope you enjoy my Rails Project My Pensieve as much as I did making it.
+<br>
+<br>
+Now for some screenshots from my Sinatra Project, My Pensieve:
+<br>
+###                                                   Home Page
+![Home Page](https://i.imgur.com/Io4JFu0.jpg)
+###                                                   Memories Index Page
+![Memories Index Page](https://i.imgur.com/ZkshlKC.jpg)
+###                                                   Add a New Memory Page
+![Add a New Memory Page](https://i.imgur.com/NvJh09c.jpg)
+###                                                   Memory Show Page
+![Memory Show Page](https://i.imgur.com/QNHJMbt.jpg)
+###                                                   Emotions Index Page
+![Emotions Index Page](https://i.imgur.com/yoxdmM6.jpg)
+###                                                   An Emotion's Memories Page
+![A Specific Emotion's Memories Page](https://i.imgur.com/tjRB8Ei.jpg)
+###                                                   People Index Page
+![People Index Page](https://i.imgur.com/5r5F2Mg.jpg)
+###                                                   A Person's Memories Page
+![A Specific Person's Memories Page](https://i.imgur.com/KwJQmRL.jpg)
