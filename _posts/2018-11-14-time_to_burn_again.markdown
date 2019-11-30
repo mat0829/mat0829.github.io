@@ -7,7 +7,7 @@ permalink:  time_to_burn_again
 
 
 <br>
-  For my Rails Project I took my Sinatra project My Pensieve, and took it to another level. I thought because I had a idea to work from that it would be easy. Not the case at all but I learned so much! First, it looks basically like a clone of the Sinatra project but on the backend it is a entirely new beast and in all the best ways. It is leaner, meaner, and so much more intelligent and clean. It is dry in a way I didn't even realized was possible. 
+  For my Rails Project I took my Sinatra project My Pensieve, and took it to another level. I thought because I had a idea to work from that it would be easy. Not the case at all but I learned so much! First, it looks basically like a clone of the Sinatra project but on the backend it is a entirely new beast and in all the best ways. It is leaner, meaner, and so much more intelligent and clean. It is DRY in a way I didn't even realized was possible. 
 <br>
 <br>
    From the start I Loved Rails and all it's abilities. I heard the term "Rails Magic" but I didn't really understand until I started learning about it and especially applying what I had learned to my Rails Project. It was beautiful to work with and I am so excited to have finally come into the meat and potatoes of this course in learning to be a Ruby on Rails developer. The magic is in how much Rails will do for you intuitively. It is INSANE! It is so smart!
@@ -22,7 +22,7 @@ permalink:  time_to_burn_again
   I am not going to lie, getting this error corrected was extremly difficult to solve. What needed to happen, I found after MUCH research, was that I needed to go onto the computer I created my application on, the laptop, as I was using both a laptop and a desktop to make this project, and use `yarn uninstall turbolinks` in the console. I also had to run `yarn upgrade` to get everything up to par and working again correctly. After this my application did what I had hoped and would launch a confirmation box when attempting to click a delete button.
 <br>
 <br>
-  Now that things were in order with that I continued to play with my application in Rails vs Sinatra. The difference in the code was the most extreme thing. It is SO dry in Rails. From the partials that I created for everything from the new and edit forms and being able to just put `<%= render 'form' %>` in each view to using the same idea to do everything from using partials for code for buttons linking to common pages like home. The code is so clean. So easy to read. 
+  Now that things were in order with that I continued to play with my application in Rails vs Sinatra. The difference in the code was the most extreme thing. It is SO DRY in Rails. From the partials that I created for everything from the new and edit forms and being able to just put `<%= render 'form' %>` in each view to using the same idea to do everything from using partials for code for buttons linking to common pages like home to code that I was using to render specific background images for different views. Partials not only worked for these but made the code so DRY later. The code is so clean. So easy to read. 
 <br>
 <br>
 I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this: 
@@ -45,4 +45,26 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
 >     <% end %><br>
 <br>
 <br>
+  Another thing that I got to see become something much better was the introduction of collection_check_boxes. So much easier to use and once I understood how they work they are more obvious to me in what they carry. I Love this about Rails. I find it to be so much more obvious when you actually go to make and especially read the code later. Truly a thing of beauty. 
+<br>
+<br>
+  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this `<body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
+    background-size: cover;background-attachment: fixed;">
+<!–– Background from wallpapersafari.com ––>`, now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
+<br>
+<br>
+  The last thing I want to discuss is Omniauth. First I had both the ability to use Facebook to login and the ability to create a login and use that. I used a trick in the create action of sessions controller `def create
+    auth = request.env["omniauth.auth"]
+    if auth
+    create_facebook_user
+    else
+      @user = User.find_by(username: params[:user][:username])
+      if @user && @user.authenticate(params[:user][:password])
+        session[:user_id] = @user.id
+        redirect_to root_path
+      else
+        redirect_to login_path
+      end
+    end
+  end`
 
