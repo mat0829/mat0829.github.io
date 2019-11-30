@@ -28,20 +28,19 @@ permalink:  time_to_burn_again
   Now that things were in order with that I continued to play with my application in Rails vs Sinatra. The difference in the code was the most extreme thing. It is SO DRY in Rails. From the partials that I created for everything from the new and edit forms and being able to just put `<%= render 'form' %>` in each view to using the same idea to do everything from using partials for code for buttons linking to common pages like home to code that I was using to render specific background images for different views. Partials not only worked for these but made the code so DRY later. The code is so clean. So easy to read. 
 <br>
 <br>
-I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this: 
-<br>
-###                                                   Example
-![Example of form](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject.jpg)
+I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this.
 <br>
 <br>
   Another thing that I got to see become something much better was the introduction of collection_check_boxes. So much easier to use and once I understood how they work they are more obvious to me in what they carry. I Love this about Rails. I find it to be so much more obvious when you actually go to make and especially read the code later. Truly a thing of beauty. 
 <br>
 <br>
-  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this
+  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this:
+<br>
 <br>
  	 <body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
      background-size: cover;background-attachment: fixed;">
    <!–– Background from wallpapersafari.com ––>
+<br>
 <br>
  now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
 <br>
