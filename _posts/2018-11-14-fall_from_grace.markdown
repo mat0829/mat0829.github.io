@@ -19,21 +19,21 @@ we solved the problem with the following code: `@memories = current_user.memorie
      Now for some screenshots from my Sinatra Project, My Pensieve:
 <br>
 ###                                                   Home Page
-![Home Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject.jpg)
+![Home Page](https://i.imgur.com/Io4JFu0.jpg)
 ###                                                   Memories Index Page
-![Memories Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject2.jpg)
+![Memories Index Page](https://i.imgur.com/ZkshlKC.jpg)
 ###                                                   Add a New Memory Page
-![Add a New Memory Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject3.jpg)
+![Add a New Memory Page](https://i.imgur.com/NvJh09c.jpg)
 ###                                                   Memory Show Page
-![Memory Show Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject4.jpg)
+![Memory Show Page](https://i.imgur.com/QNHJMbt.jpg)
 ###                                                   Emotions Index Page
-![Emotions Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject7.jpg)
+![Emotions Index Page](https://i.imgur.com/yoxdmM6.jpg)
 ###                                                   An Emotion's Memories Page
-![A Specific Emotion's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject5.jpg)
-###                                                   People Index Page
-![People Index Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject9.jpg)
+![A Specific Emotion's Memories Page](https://i.imgur.com/tjRB8Ei.jpg)
+###                                                   People/Pets Index Page
+![People/Pets Index Page](https://i.imgur.com/5r5F2Mg.jpg)
 ###                                                   A Person's Memories Page
-![A Specific Person's Memories Page](https://i27.photobucket.com/albums/c180/LVSpiritSeeker/SinatraProject6.jpg)
+![A Specific Person's Memories Page](https://i.imgur.com/KwJQmRL.jpg)
 <br>
      So, in conclusion, a User can make a Memory and then can search either by their Memories in general, by an Emotion, or by a Person and get all Memories,Emotions, and People tied to any of the individual Memories. That way you can simply look up all the Memories tied to "Dad" or "Joy" or simply browse your Memories as a whole. I also decided to add in the 10 base Emotions so that there is some out of the gates. I thought of solo memories too and added in one for the Players(People) side too with Me, Myself, and I so that there is a Person tied to all Memories. I think, in the end, I might end up adding a has many through relationship with the User class too for the many benefits and after seeing the end product of my Application and what I wish it could still do. 
 <br>
