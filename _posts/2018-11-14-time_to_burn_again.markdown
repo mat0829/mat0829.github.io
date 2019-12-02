@@ -19,7 +19,10 @@ permalink:  time_to_burn_again
   I used Rails' ability to create a new application and was NOT disappointed. It created a large percentage of the filetree that I would need for my application.  I used the ability Rails gives to generate my models and the corresponding databases almost instantly yet it generates all the code needed for creating a Model and a Migration. Oh, so freaking beautiful. I used it to generate my basic controllers though I didn't use it for any views as I wanted to not have anything unnecessary and I wanted to be able to build and test my views and actions for my controllers. I like to build it out as I go to make sure everything is going as it should. It also makes identifying any errors much easier.
 <br>
 <br>
-  I did have an issue when I first used Rails to create my application with the added in turbolinks. It caused my program to work incorrectly and it would not actually launch my page. I researched and discovered if I just took out`<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>` it fixed my error. This made it so I could render views and I thought I was good to go but I discovered this was not the case. I noticed that when I was trying to get my delete buttons to make the confirmation box pop up and confirm the user actually wanted to delete the memory, emotion, or player, instead of just instantly carried out the action with no way to recover the deleted object other than recreating it. 
+  I did have an issue when I first used Rails to create my application with the added in turbolinks. It caused my program to work incorrectly and it would not actually launch my page. I researched and discovered if I just took out`<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>` it fixed my error. This made it so I could render views and I thought I was good to go but I discovered this was not the case. I noticed that when I was trying to get my delete buttons to make the confirmation box pop up and confirm the user actually wanted to delete the memory, emotion, or player, instead of just instantly carried out the action with no way to recover the deleted object other than recreating it.
+<br>
+###                                                   Confirmation Box
+![Confirmation Box](https://i.imgur.com/2JiRsRM.png)
 <br>
 <br>
   I am not going to lie, getting this error corrected was extremly difficult to solve. What needed to happen, I found after MUCH research, was that I needed to go onto the computer I created my application on, the laptop, as I was using both a laptop and a desktop to make this project, and use `yarn uninstall turbolinks` in the console. I also had to run `yarn upgrade` to get everything up to par and working again correctly. After this my application did what I had hoped and would launch a confirmation box when attempting to click a delete button.
@@ -53,19 +56,21 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
 <br>
 Now for some screenshots from my Sinatra Project, My Pensieve:
 <br>
+###                                                   Home Page not logged in
+![Home Page not logged in](https://i.imgur.com/PEmBWhU.png)
 ###                                                   Home Page
-![Home Page](https://i.imgur.com/Io4JFu0.jpg)
+![Home Page](https://i.imgur.com/s2bOt9F.png)
 ###                                                   Memories Index Page
-![Memories Index Page](https://i.imgur.com/ZkshlKC.jpg)
+![Memories Index Page](https://i.imgur.com/8K4DbKR.png)
 ###                                                   Add a New Memory Page
-![Add a New Memory Page](https://i.imgur.com/NvJh09c.jpg)
+![Add a New Memory Page](https://i.imgur.com/xXJhqzD.png)
 ###                                                   Memory Show Page
-![Memory Show Page](https://i.imgur.com/QNHJMbt.jpg)
+![Memory Show Page](https://i.imgur.com/e82oTlx.png)
 ###                                                   Emotions Index Page
-![Emotions Index Page](https://i.imgur.com/yoxdmM6.jpg)
+![Emotions Index Page](https://i.imgur.com/hX3Hic4.png)
 ###                                                   An Emotion's Memories Page
-![A Specific Emotion's Memories Page](https://i.imgur.com/tjRB8Ei.jpg)
-###                                                   People Index Page
-![People Index Page](https://i.imgur.com/5r5F2Mg.jpg)
+![A Specific Emotion's Memories Page](https://i.imgur.com/ZQqRRDO.png)
+###                                                   People/Pets Index Page
+![People/Pets Index Page](https://i.imgur.com/vVWOSxp.png)
 ###                                                   A Person's Memories Page
-![A Specific Person's Memories Page](https://i.imgur.com/KwJQmRL.jpg)
+![A Specific Person's Memories Page](https://i.imgur.com/46os0qT.png)
