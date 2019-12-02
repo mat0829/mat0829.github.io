@@ -63,7 +63,7 @@ Now for some screenshots from my Rails Project, My Pensieve:
 ###                                                   Memories Index Page
 ![Memories Index Page](https://i.imgur.com/8K4DbKR.png)
 ###                                                   Add a New Memory Page
-![Add a New Memory Page](https://i.imgur.com/xXJhqzD.png)
+![Add a New Memory Page](https://i.imgur.com/rQlcwrF.png)
 ###                                                   Memory Show Page
 ![Memory Show Page](https://i.imgur.com/WO6RmLJ.png)
 ###                                                   Emotions Index Page
