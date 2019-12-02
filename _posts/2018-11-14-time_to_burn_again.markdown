@@ -54,7 +54,7 @@ I Love form builders! I mean I LOVE them! All the nonsense is stripped away to t
   Making this project was a blast and as I have stated in every blog about projects they teach me so much by having so many unexpected things arise and having to figure them out that they are my favorite part everytime. They reinforce the knowledge I had from the section but they also teach me things I never thought to ask or notice until they were needed. Rails in comparision to Sinatra is like having powertools vs regular tools to build a house. Sure, you can get it done either way, but not only are the powertools going to be easier but they also build a more solid house. I hope you enjoy my Rails Project My Pensieve as much as I did making it.
 <br>
 <br>
-Now for some screenshots from my Sinatra Project, My Pensieve:
+Now for some screenshots from my Rails Project, My Pensieve:
 <br>
 ###                                                   Home Page not logged in
 ![Home Page not logged in](https://i.imgur.com/PEmBWhU.png)
