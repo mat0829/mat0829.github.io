@@ -39,8 +39,6 @@ permalink:  rising_from_the_ashes_again
 <br>
 ###                                                  Task Images
 ![Task Images](https://i.imgur.com/ykacAtS.jpg)
-<br>
-<br>
 ###                                                   Sticker Images
 ![Sticker Images](https://i.imgur.com/UAulWPb.jpg)
 <br>
@@ -48,43 +46,30 @@ permalink:  rising_from_the_ashes_again
 I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this.
 <br>
 <br>
-  Another thing that I got to see become something much better was the introduction of collection_check_boxes. So much easier to use and once I understood how they work they are more obvious to me in what they carry. I Love this about Rails. I find it to be so much more obvious when you actually go to make and especially read the code later. Truly a thing of beauty. 
+  Creating this application was by far the most challenging and rewarding experiences of my Flatiron experience. Marrying the backend and the frontend seemed impossible at 1st but now I find it as natural as breathing. I absolutely Love Javascript now and will continue to use it in my future as a Web Developer. I hope you end up enjoying Stickers! as much as I did making it.
 <br>
 <br>
-  I used layouts for a large percentage of my backgrounds that I rendered for my different views for emotions and players. For Memories I used partials because they were different for different views v.s. the same across all views of emotions and players. I made layouts for home, emotions, and players. The emotions and players layouts I added into my emotions and players controllers to render across all views, and for the home which includes my home page, signup, and login pages, I placed it in my users, session, and static controllers. The code used to have a big chunk of code in almost all the views that looked like this:
+Now for some screenshots from my Javascript Project, Stickers!:
 <br>
-<br>
- 	 <body style="background: url(https://i.imgur.com/ZzijxMd.jpg) center no-repeat;
-     background-size: cover;background-attachment: fixed;">
-   <!–– Background from wallpapersafari.com ––>
-<br>
-<br>
- now it's just invisible on most of the views and brought down to just this in the ones with the partials for individual views `<%= render 'index_background' %>` So much more DRY.
-<br>
-<br>
-  The last thing I want to discuss is Omniauth. First I had both the ability to use Facebook to login and the ability to create a login and use that. I used a trick in the create action of sessions controller where it would `auth = request.env["omniauth.auth"]` and then check if auth then it would go to a seperate session action called create_facebook_user with stuff specific for omniauth, or else it would make a user through the traditional way. I also added a field for password in the omniauth one that tied to a randomly generated, url safe, password as to fulfill the need for has_secure_password to have a password to work with. This made it so I could still use it for both and have it work correctly ensuring al passwords are secure.
-<br>
-<br>
-  Making this project was a blast and as I have stated in every blog about projects they teach me so much by having so many unexpected things arise and having to figure them out that they are my favorite part everytime. They reinforce the knowledge I had from the section but they also teach me things I never thought to ask or notice until they were needed. Rails in comparision to Sinatra is like having powertools vs regular tools to build a house. Sure, you can get it done either way, but not only are the powertools going to be easier but they also build a more solid house. I hope you enjoy my Rails Project My Pensieve as much as I did making it.
-<br>
-<br>
-Now for some screenshots from my Rails Project, My Pensieve:
-<br>
-###                                                   Home Page not logged in
-![Home Page not logged in](https://i.imgur.com/PEmBWhU.png)
 ###                                                   Home Page
-![Home Page](https://i.imgur.com/s2bOt9F.png)
-###                                                   Memories Index Page
-![Memories Index Page](https://i.imgur.com/8K4DbKR.png)
-###                                                   Add a New Memory Page
-![Add a New Memory Page](https://i.imgur.com/rQlcwrF.png)
-###                                                   Memory Show Page
-![Memory Show Page](https://i.imgur.com/WO6RmLJ.png)
-###                                                   Emotions Index Page
-![Emotions Index Page](https://i.imgur.com/hX3Hic4.png)
-###                                                   An Emotion's Memories Page
-![A Specific Emotion's Memories Page](https://i.imgur.com/ZQqRRDO.png)
-###                                                   People/Pets Index Page
-![People/Pets Index Page](https://i.imgur.com/vVWOSxp.png)
-###                                                   A Person's Memories Page
-![A Specific Person's Memories Page](https://i.imgur.com/46os0qT.png)
+![Home Page](https://i.imgur.com/U3QT3hMh.jpg)
+###                                                   Adult Login/Create a New User Page
+![Adult Login/Create a New User Page](https://i.imgur.com/qcSgXKq.jpg)
+###                                                   Adult User Profile
+![Adult User Profile](https://i.imgur.com/8GykXki.jpg)
+###                                                   Create a New Task Page
+![Create a New Task Page](https://i.imgur.com/wkO3hL4.jpg)
+###                                                   Adult Tasks Page
+![Adult Tasks Page](https://i.imgur.com/KW6SKkC.jpg)
+###                                                   Child User Profile
+![Child User Profile](https://i.imgur.com/gKgwM8V.jpg)
+###                                                   Child Tasks Info Page
+![Child Task Info Page](https://i.imgur.com/eIdXRdP.jpg)
+###                                                   Child Task Completion Page
+![Child Task Completion Page](https://i.imgur.com/tdN7Yjr.jpg)
+###                                                   Child Stickers Collection
+![Child Stickers Collection](https://i.imgur.com/P0hw1Dy.jpg)
+###                                                   Child Prizes Page
+![Child Prizes Page](https://i.imgur.com/KiSJCmq.jpg)
+###                                                   Child Prize Purchase
+![Child Prize Purchase](https://i.imgur.com/DYzh12f.jpg)
