@@ -38,7 +38,11 @@ permalink:  rising_from_the_ashes_again
 <br>
 <br>
   ###                                                   Task Images
-![Task Images](https://imgur.com/IhEZMLd)
+![Task Images](https://i.imgur.com/IhEZMLd.jpg)
+<br>
+<br>
+###                                                   Sticker Images
+![Sticker Images](https://i.imgur.com/jHwhbJr.jpg)
 <br>
 <br>
 I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this.
