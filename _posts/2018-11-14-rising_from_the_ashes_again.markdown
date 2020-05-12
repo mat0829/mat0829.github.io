@@ -23,17 +23,11 @@ permalink:  rising_from_the_ashes_again
 	<br>
 	<br>
    `fetch('http://localhost:3000/api/v1/profile', { 
-	 <br>
         method: 'GET',
-		<br>
         headers: {
-		<br>
-           'Content-Type': 'application/json',
-		<br>			 
-           'Authorization': `Bearer ${token}`
-		<br>
-         }
-		<br>		 
+           'Content-Type': 'application/json',			 
+           'Authorization': 'Bearer ${token}'
+         }		 
     })`
 <br>
 <br>
