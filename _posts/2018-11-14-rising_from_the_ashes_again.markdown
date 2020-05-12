@@ -5,9 +5,8 @@ date:       2018-11-14 19:03:28 -0500
 permalink:  rising_from_the_ashes_again
 ---
 
-<center>
-![Stickers!](https://i.imgur.com/cNYNSbjt.jpg)
-</center>
+
+![Stickers!](https://i.imgur.com/cNYNSbjh.jpg)
 <br>
   For my Javascript Project I created an application called Stickers! Stickers is an application for parents to create Tasks for their children to do. Upon completing each Task they are rewarded with Stickers, which they collect and go into their Stickers Collection, and Sticker Points which they can use to buy Prizes that are created for them by their parents. I wanted the app to extremely fun to use with bright colors to draw kids in, and easy to use for both the parents and children using the app. 
 <br>
