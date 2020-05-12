@@ -20,13 +20,13 @@ permalink:  rising_from_the_ashes_again
 <br>
 <br>
   Now for another major player that had to happen in order for the application to work, users and being able to log in and out using seperate ones. Otherwise everything overlaps and things become very convoluted. The answer was Javascript Web Tokens (jwt). To anyone reading this and looking for more knowledge here's the link I was given: [Jwt Auth Rails](https://learn.co/lessons/jwt-auth-rails) which was from Learn.co. I suggest you take it slow as you do follow the article and test as suggested as you go. JSON Web Token (sometimes pronounced jwt) is an internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key. Once set up you are required to save this token somewhere, I chose localStorage upon each successful Login or User creation where it was generated new each time. The token is then sent each time you wish to change any of the backend persisted data on the server. It is sent in the following format with fetch: 
-	` fetch('http://localhost:3000/api/v1/profile', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        }
-      })`
+>  	 fetch('http://localhost:3000/api/v1/profile', {
+>          method: 'GET',
+>         headers: {
+>           'Content-Type': 'application/json',
+>           'Authorization': `Bearer ${token}`
+>         }
+>       })
 <br>
   It is essential to send it using this format or the data will simply not be accepted nor changes persisted. It took me alot of time, research, and testing to finally get it all working correctly but I am so happy with the result. Thanks to jwt, I was able to build a version of the app that I had in my head for 6 + months. 
 <br>
