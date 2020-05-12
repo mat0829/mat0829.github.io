@@ -39,11 +39,11 @@ permalink:  rising_from_the_ashes_again
 <br>
 ###                                                  Task Images
 ![Task Images](https://i.imgur.com/ykacAtS.jpg)
-###                                                   Sticker Images
+###                                                  Sticker Images
 ![Sticker Images](https://i.imgur.com/UAulWPb.jpg)
 <br>
 <br>
-I Love form builders! I mean I LOVE them! All the nonsense is stripped away to these beautiful, concise, and easy to read things and the same for fields_for. Just so clean. I can't stop thinking about it, how clean it is. I Love things to be clean and Rails excels at this.
+  Now for something that I did that I am pretty proud of in general, my function avatarCreationIfEmpty(). This is one of my more clever ideas. Let me explain: During the building and testing of my app I realized that the User may or may not know what or where to get a avatar url, which was required at the time. I thought, what if I could just make it so I could do it for them. From this idea I stumbled upon a quite a few different sites which I decided to put into the function. The sites include: [RoboHash](https://robohash.org), [cataas or Cat as a service](https://cataas.com), [placedog.net](https://placedog.net), [adorable avatars](https://api.adorable.io), and [LoremFlickr](http://loremflickr.com). Between all these sites they are able to generate random robots, cats, dogs, monsters, and in the case of LoremFlickr it can search to find a avatar based on search terms. Using these and some ingenuity I managed to create the function avatarCreationIfEmpty() which prompts the User with a choice to choose between and based on their answer generates an avatar for them. I thought it was pretty cool and fun and I hope you do too.  
 <br>
 <br>
   Creating this application was by far the most challenging and rewarding experiences of my Flatiron experience. Marrying the backend and the frontend seemed impossible at 1st but now I find it as natural as breathing. I absolutely Love Javascript now and will continue to use it in my future as a Web Developer. I hope you end up enjoying Stickers! as much as I did making it.
