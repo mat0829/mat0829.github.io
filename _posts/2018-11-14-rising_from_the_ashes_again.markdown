@@ -37,7 +37,7 @@ permalink:  rising_from_the_ashes_again
   Another major idea I had to figure out in order to make it a reality was how to have a group of images which were ready to select for Tasks and Prizes so that a user could simply choose the image that best represented the Task they were creating. I did this through adding in a few new models in Task Images and Prize Images, and with Stickers. With Task and Prize Images the User could either add their own image url or select from a large group of already made images. 160 for Tasks, and 60 for prizes. With Stickers, because they are much more challenging to find and I wanted a common look, I chose to only allow the User to select from the 163 provided. I spent so much time and effort in making all of these images look uniform as possible. One of the resources I used that I really found full of great stuff, if you're not afraid to edit and adapt them as you need, was : [Vecteezy](https://www.vecteezy.com/). I highly suggest using it and you can search by free license.
 <br>
 <br>
-  ###                                                   Task Images
+###                                                  Task Images
 ![Task Images](https://i.imgur.com/IhEZMLd.jpg)
 <br>
 <br>
