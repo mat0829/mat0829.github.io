@@ -11,7 +11,7 @@ permalink:  another_day_of_grinding_on
    (What will each statement log to the console?)
 <br>
 <br>
-			I believe that var will become "first value" in the outer scope, which is true, which means that in inner block it of the if true it then becomes "second value" because it's a global variable and globally scoped and both the inner and outer scope have access to the outer block's var variable and the original var variable is reassigned to "second value" in the inner scope. 
+			I believe that var will become "first value" in the outer scope, which is true, which means that in the inner block it of the if true it then becomes "second value" because it's a global variable and globally scoped and both the inner and outer scope have access to the outer block's var variable and the original var variable is reassigned to "second value" in the inner scope. 
 			result = (This is what happened)
 <br>
 <br>
