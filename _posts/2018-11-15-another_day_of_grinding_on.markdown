@@ -6,7 +6,8 @@ permalink:  another_day_of_grinding_on
 ---
 
 # Javascript Assessment Questions:
-  
+<br>
+<br>
 ## 1. What is Scope
   
    (What will each statement log to the console?)
